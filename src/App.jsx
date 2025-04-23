@@ -26,10 +26,9 @@ export default function App() {
         }
       />
 
-      <Route path="/oauth-redirect" element={<OAuthRedirect />} />
-
       <Route path="profile" element={<RedirectProfile />} />
       <Route path="/" element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
         <Route index element={<Home />} />
         <Route path="profile/:id" element={<Profile />} />
         <Route
